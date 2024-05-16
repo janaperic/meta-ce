@@ -3,6 +3,8 @@ include recipes-core/images/core-image-minimal.bb
 
 DESCRIPTION = "Homework tasks for Custimer Engineer role at Mender"
 
+inherit mender-full 
+
 IMAGE_FEATURES += " \
     ssh-server-dropbear \
 "

@@ -4,8 +4,7 @@ DL_DIR ?= "${TOPDIR}/downloads"
 SSTATE_DIR ?= "${TOPDIR}/sstate-cache"
 TMPDIR = "${TOPDIR}/tmp"
 
-DISTRO ?= "poky"
-PACKAGE_CLASSES ?= "package_ipk"
+DISTRO ?= "ce-linux"
 EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
 USER_CLASSES ?= "buildstats"
 PATCHRESOLVE = "noop"
@@ -21,34 +20,3 @@ BB_DISKMON_DIRS ??= "\
     HALT,/tmp,10M,1K"
 
 CONF_VERSION = "2"
-
-RPI_USE_U_BOOT = "1"
-
-# Having the serial terminal enabled is useful.
-ENABLE_UART = "1"
-
-# rpi-base.inc removes these as they are normally installed on to the
-# vfat boot partition. To be able to update the Linux kernel Mender
-# uses an image that resides on the root file system and below line
-# ensures that they are installed to /boot
-IMAGE_INSTALL:append = " kernel-image kernel-devicetree"
-
-# Mender will build an image called `sdimg` which shall be used instead
-# of the `rpi-sdimg`.
-IMAGE_FSTYPES:remove = " rpi-sdimg"
-
-# Use the same type here as specified in ARTIFACTIMG_FSTYPE to avoid
-# building an unneeded image file.
-SDIMG_ROOTFS_TYPE = "ext4"
-
-# Reserve more space than the Mender default for the boot partition,
-# as the raspberrypi machines bring some additional things that need
-# to be placed there too
-MENDER_BOOT_PART_SIZE_MB = "64"
-
-MENDER_ARTIFACT_NAME ?= "rootfs-v1"
-
-MENDER_FEATURES_ENABLE:append = " mender-uboot mender-image mender-image-sd"
-MENDER_FEATURES_DISABLE:append = " mender-grub mender-image-uefi"
-
-

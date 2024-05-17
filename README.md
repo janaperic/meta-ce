@@ -8,6 +8,6 @@ Custom Yocto layer for CE-linux
 3. Enable UART & SSH ✅
 4. Add bootloader variable 'homework_variable' ✅
 5. Write a distro specific conf file ✅
-6. Write an inventory script for reading 'homework_variable'
+6. Write an inventory script for reading 'homework_variable' ✅
 7. Write a recipe for the inventory script
 8. Override polling intervals in mender.conf (via recipe) 

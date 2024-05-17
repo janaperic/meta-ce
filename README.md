@@ -7,4 +7,4 @@ Custom Yocto layer for CE-linux
 2. Ensure communication with Mender server
 3. Enable UART & SSH ✅
 4. Add bootloader variable 'homework_variable'
-5. Write a distro specific conf file 
+5. Write a distro specific conf file ✅

@@ -1,10 +1,10 @@
 MACHINE ?= "raspberrypi4-64"
+DISTRO ?= "ce-linux"
 
 DL_DIR ?= "${TOPDIR}/downloads"
 SSTATE_DIR ?= "${TOPDIR}/sstate-cache"
 TMPDIR = "${TOPDIR}/tmp"
 
-DISTRO ?= "ce-linux"
 EXTRA_IMAGE_FEATURES ?= "debug-tweaks"
 USER_CLASSES ?= "buildstats"
 PATCHRESOLVE = "noop"

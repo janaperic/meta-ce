@@ -1,0 +1,18 @@
+diff --git a/include/configs/rpi.h b/include/configs/rpi.h
+index 4c5c1ac31f..e5a5c518b3 100644
+--- a/include/configs/rpi.h
++++ b/include/configs/rpi.h
+@@ -171,10 +171,11 @@
+ 
+ #define CONFIG_EXTRA_ENV_SETTINGS \
+ 	"dhcpuboot=usb start; dhcp u-boot.uimg; bootm\0" \
++	"homework_variable=hello\0" \
+ 	ENV_DEVICE_SETTINGS \
+ 	ENV_DFU_SETTINGS \
+ 	ENV_MEM_LAYOUT_SETTINGS \
+ 	BOOTENV
+ 
+ 
+-#endif
++#endif
+\ No newline at end of file

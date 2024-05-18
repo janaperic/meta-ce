@@ -9,10 +9,6 @@ IMAGE_FEATURES += " \
     ssh-server-dropbear \
 "
 
-# Include modules in rootfs
-#IMAGE_INSTALL += " \
-#    kernel-modules \
-#    sudo \
-#    avahi-daemon \
-#    jq \
-#"
+IMAGE_INSTALL += " \
+    mender-add-inventory \
+"

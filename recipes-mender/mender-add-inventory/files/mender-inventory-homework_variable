@@ -1,0 +1,5 @@
+#!/bin/sh
+
+fw_printenv | grep "homework_variable"
+
+exit 0

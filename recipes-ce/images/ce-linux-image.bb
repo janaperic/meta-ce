@@ -10,5 +10,7 @@ IMAGE_FEATURES += " \
 "
 
 IMAGE_INSTALL += " \
+    sudo \
+    vim \
     mender-add-inventory \
 "

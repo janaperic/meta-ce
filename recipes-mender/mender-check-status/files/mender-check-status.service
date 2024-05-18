@@ -1,0 +1,11 @@
+[Unit]
+Description=Check status of mender-client
+Before=mender-client.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/check-status
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

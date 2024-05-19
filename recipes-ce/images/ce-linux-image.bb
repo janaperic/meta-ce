@@ -1,7 +1,7 @@
 # Base this image on core-image-minimal
 include recipes-core/images/core-image-minimal.bb
 
-DESCRIPTION = "Homework tasks for Custimer Engineer role at Mender"
+DESCRIPTION = "CE Linux image"
 
 inherit mender-full 
 

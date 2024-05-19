@@ -12,6 +12,7 @@ Custom Yocto layer for CE-linux
 7. Write a recipe for the inventory script  ✅
 8. Override polling intervals in mender.conf (via recipe) ✅
 9. Deal with layer licenses
-10. Develop a system service which will poll for the status of the service mender-client and print to stdout ✅
-11. Write a bash script for gathering device information via Mender's API ✅
-12. Create a reproducible build environment
+10. Add conf-notes.txt for custom image selection
+11. Develop a system service which will poll for the status of the service mender-client and print to stdout ✅
+12. Write a bash script for gathering device information via Mender's API ✅
+13. Create a reproducible build environment

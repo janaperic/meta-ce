@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Inventory script used to gather the value of homework_variable set in U-Boot
+
 fw_printenv | grep "homework_variable"
+if [[ ! $? -eq 0 ]] ; then
+	echo "homework_variable=unknown"
+fi
 
 exit 0

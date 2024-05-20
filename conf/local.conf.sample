@@ -20,3 +20,5 @@ BB_DISKMON_DIRS ??= "\
     HALT,/tmp,10M,1K"
 
 CONF_VERSION = "2"
+
+MENDER_ARTIFACT_NAME ?= "rootfs-v2"

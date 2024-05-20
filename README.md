@@ -1,6 +1,6 @@
 # meta-ce
 
-Custom Yocto layer for CE-linux 
+Custom Yocto layer for CE Linux 
 
 ### To-do list: 
 1. Build Yocto image with Mender installed ✅
